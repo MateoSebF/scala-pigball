@@ -11,7 +11,7 @@ class CreateGameStressTest extends Simulation {
 
   // Define HTTP configuration
   val httpProtocol = http
-    .baseUrl("http://localhost:8080") // Cambia esto a la URL de tu servidor
+    .baseUrl("https://piggame.duckdns.org:8080") // Cambia esto a la URL de tu servidor
     .acceptHeader("application/json")
     .contentTypeHeader("application/json")
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")

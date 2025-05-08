@@ -7,12 +7,12 @@ import scala.concurrent.duration._
 class PigBallGameSimulation extends Simulation {
 
   // Número de jugadores por sala
-  val playersPerRoom = 9
+  val playersPerRoom = 19
 
   // Configuración HTTP + WS
   val httpProtocol = http
-    .baseUrl("https://localhost:8080")
-    .wsBaseUrl("wss://localhost:8080")
+    .baseUrl("https://piggame.duckdns.org:8080")
+    .wsBaseUrl("wss://piggame.duckdns.org:8080")
     .wsReconnect
     .wsMaxReconnects(5)
     .wsUnmatchedInboundMessageBufferSize(1000)
