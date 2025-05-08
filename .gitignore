@@ -1,0 +1,58 @@
+# sbt
+/target/
+/project/target/
+/project/project/target/
+/project/project/project/target/
+/project/project/project/project/target/
+/project/project/project/project/project/target/
+lib_managed/
+src_managed/
+.idea/
+.cache/
+.classpath
+.project
+.settings/
+
+# Bloop
+.bloop/
+.bsp/
+
+# Metals
+.metals/
+metals.sbt
+
+# VSCode
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Logs
+*.log
+
+# Binary and database files
+*.lock.db
+*.mv.db
+*.bin
+
+# Gatling
+.gatling/
+
+# JetBrains IDEs
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Test result output (if applicable)
+test-output/
+
+# Optional: ignore specific compiled class or semanticdb metadata
+**/*.class
+**/*.semanticdb
+
+# Optional: ignore the .scala-pigball specific build artifacts
+scala-pigball/target/
+scala-pigball/project/target/
+scala-pigball/project/project/target/
+scala-pigball/project/project/project/target/
