@@ -135,16 +135,12 @@ class PigBallGameSimulation extends Simulation {
   val scnRoom1 = makeScenario("1")
   val scnRoom2 = makeScenario("2")
   val scnRoom3 = makeScenario("3")
-  val scnRoom4 = makeScenario("4")
-  val scnRoom5 = makeScenario("5")
 
   // Setup: inyectamos 19 jugadores en cada sala
   setUp(
     scnRoom1.inject(atOnceUsers(playersPerRoom)),
     scnRoom2.inject(atOnceUsers(playersPerRoom)),
     scnRoom3.inject(atOnceUsers(playersPerRoom)),
-    scnRoom4.inject(atOnceUsers(playersPerRoom)),
-    scnRoom5.inject(atOnceUsers(playersPerRoom))
   ).protocols(httpProtocol)
     .assertions(
       global.failedRequests.count.is(0),
